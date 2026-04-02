@@ -11,9 +11,12 @@
     h1 { font-size: 1.5rem; border-bottom: 2px solid #4f46e5; padding-bottom: 0.5rem; }
     h2 { font-size: 1.1rem; margin-top: 2rem; color: #4f46e5; }
     a { color: #4f46e5; }
+    .hero { background: #f5f3ff; border: 1px solid #c7d2fe; border-radius: 10px; padding: 1.5rem 2rem; margin: 1.5rem 0; }
+    .hero p { margin: 0.4rem 0; font-size: 0.95rem; color: #555; }
+    .hero-link { display: inline-block; margin-top: 1rem; padding: 0.75rem 1.8rem; background: #4f46e5; color: #fff; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1rem; }
+    .hero-link:hover { background: #4338ca; }
     .site-link { display: inline-block; margin: 0.5rem 0; padding: 0.6rem 1.2rem; background: #4f46e5; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; }
     .site-link:hover { background: #4338ca; }
-    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.85rem; color: #888; }
     section { margin-top: 2rem; }
   </style>
 </head>
@@ -22,11 +25,11 @@
   <h1>学習支援サイト</h1>
   <p>資格・学習に役立つウェブアプリを公開しています。</p>
 
-  <section>
-    <h2>公開サイト</h2>
-    <p><a class="site-link" href="/stats-pre1-app/">統計検定 準1級 学習リファレンス</a></p>
-    <p>確率分布・推測統計・多変量解析・ベイズ統計をインタラクティブな図と数式で解説する準1級対策サイトです。</p>
-  </section>
+  <div class="hero">
+    <strong>メインコンテンツはこちら</strong>
+    <p>統計検定 準1級 対策サイト — 確率分布・推測統計・多変量解析・ベイズ統計をインタラクティブな図と数式で解説。</p>
+    <a class="hero-link" href="/stats-pre1-app/">統計検定 準1級 学習リファレンスを見る →</a>
+  </div>
 
   <section id="privacy">
     <h2>プライバシーポリシー</h2>

@@ -44,22 +44,28 @@
     <link rel="stylesheet" crossorigin href="../assets/index-suXKca_U.css">
   </head>
   <body>
-    <noscript id="seo-data">
-    <h1>標本分布の相互関係 ($t, \chi^2, F$)</h1>
-    <p>このモジュールで学ぶこと
-
-「10人の血圧データだけで新薬の効果を証明できるか？」——この問いに答えるには、正規分布だけでは不十分です。なぜなら、真のばらつき（母分散）が分からないからです。このモジュールでは、その制約のもとで正確な推測を可能にする3つの分布 ・・ の意味と使い所を学びます。
-
- 「代用品を使う不確かさ」を正直に反映した分布
-
-理想の統計では「真のばらつき （母分散）が既知」という前提で正規分布を使います。しかし現実に母分散が分かっていることはまずありません。
-
-仕方なく「手元のデータから計算した （標本分散）」で代用するしかないのですが——これは「精密な計量カップの代わりに目分量で塩を入れる」ようなものです。代用品を使う分の余分な不確かさを、形に正直に反映したのが、これから学ぶ3つの分布です。
-
-分布：母分散が不明なときの推測
-
-新薬を10人に投与したら血圧が平均 5 m...</p>
-  </noscript>
-    <div id="root"></div>
+    <div id="root"><article id="static-fallback" style="font-family:sans-serif;line-height:1.7;max-width:860px;margin:0 auto;padding:24px 16px">
+  <h1 style="font-size:1.8rem;font-weight:700;border-bottom:2px solid #2563eb;padding-bottom:8px;margin-bottom:16px">統計検定 準1級 学習リファレンス</h1>
+  <p style="color:#444;margin-bottom:24px">確率分布・推測統計・多変量解析・ベイズ統計・時系列分析をインタラクティブな図と数式で解説する統計検定準1級対策サイトです。数学的な素養が中学〜高校レベルの方でも理解できるよう、概念の直感的な説明・インタラクティブなグラフ・確認クイズを提供しています。</p>
+  <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:12px">学習モジュール一覧</h2>
+  <ul style="list-style:none;padding:0">
+<li style="margin-bottom:12px"><a href="/1.1-clt/" style="color:#2563eb;font-weight:600;text-decoration:none">正規分布と大標本理論</a><br><span style="color:#555;font-size:0.9rem">データが増えることで見えてくる「究極の安定感」を理解しましょう。</span></li>
+<li style="margin-bottom:12px"><a href="/1.2-sampling/" style="color:#2563eb;font-weight:600;text-decoration:none">標本分布の相互関係 ($t, \chi^2, F$)</a><br><span style="color:#555;font-size:0.9rem">母分散がわからない…そんな「現場のジレンマ」を解決する分布たちです。</span></li>
+<li style="margin-bottom:12px"><a href="/1.3-anova/" style="color:#2563eb;font-weight:600;text-decoration:none">分散分析 (ANOVA)</a><br><span style="color:#555;font-size:0.9rem">3つ以上のグループを「一気に」比較する、効率的な判断手法。</span></li>
+<li style="margin-bottom:12px"><a href="/1.4-inference/" style="color:#2563eb;font-weight:600;text-decoration:none">推定・検定の理論的背景</a><br><span style="color:#555;font-size:0.9rem">P値の正しい読み方と、「見逃し」を防ぐ検出力の設計を学びます。</span></li>
+<li style="margin-bottom:12px"><a href="/2.1-regression/" style="color:#2563eb;font-weight:600;text-decoration:none">重回帰分析とモデル評価</a><br><span style="color:#555;font-size:0.9rem">「原因」から「結果」を予測するための、強力な方程式を組み立てます。</span></li>
+<li style="margin-bottom:12px"><a href="/2.2-pca/" style="color:#2563eb;font-weight:600;text-decoration:none">主成分分析 (PCA)</a><br><span style="color:#555;font-size:0.9rem">100個の項目を、3つの「本質」に凝縮する魔法のテクニック。</span></li>
+<li style="margin-bottom:12px"><a href="/2.3-discriminant/" style="color:#2563eb;font-weight:600;text-decoration:none">判別分析とマハラノビス距離</a><br><span style="color:#555;font-size:0.9rem">「どのグループに属するか」を数式で判定し、外れ値を正確に見抜く技術。</span></li>
+<li style="margin-bottom:12px"><a href="/2.4-factor/" style="color:#2563eb;font-weight:600;text-decoration:none">因子分析</a><br><span style="color:#555;font-size:0.9rem">目に見えない「性格」や「価値観」を、アンケートデータからあぶり出す。</span></li>
+<li style="margin-bottom:12px"><a href="/3.1-bayes/" style="color:#2563eb;font-weight:600;text-decoration:none">ベイズ推定とマルコフ連鎖</a><br><span style="color:#555;font-size:0.9rem">「今の確信」を「新しいデータ」でアップデートし続ける、進化する統計学。</span></li>
+<li style="margin-bottom:12px"><a href="/3.2-timeseries/" style="color:#2563eb;font-weight:600;text-decoration:none">時系列解析</a><br><span style="color:#555;font-size:0.9rem">「過去」から「未来」を読み解く、時間の流れを考慮した統計学。</span></li>
+  </ul>
+  <nav style="margin-top:32px;border-top:1px solid #ddd;padding-top:16px;display:flex;gap:16px">
+    <a href="/glossary/" style="color:#2563eb">用語集</a>
+    <a href="/cheatsheet/" style="color:#2563eb">公式集</a>
+    <a href="/guide/" style="color:#2563eb">試験ガイド</a>
+    <a href="/about/" style="color:#2563eb">サイトについて</a>
+  </nav>
+</article></div>
   </body>
 </html>

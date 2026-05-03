@@ -51,70 +51,107 @@
   </head>
   <body>
     <div id="root"><article id="static-fallback" style="font-family:sans-serif;line-height:1.7;max-width:860px;margin:0 auto;padding:24px 16px">
-  <h1 style="font-size:1.8rem;font-weight:700;border-bottom:2px solid #2563eb;padding-bottom:8px;margin-bottom:16px">統計検定 準1級 学習リファレンス</h1>
+  <nav style="margin-bottom:16px;display:flex;gap:12px;font-size:0.9rem">
+    <a href="/" style="color:#2563eb;text-decoration:none">← ホーム</a>
+    <a href="/3.1-bayes/" style="color:#2563eb;text-decoration:none">← ベイズ推定とマルコフ連鎖</a>
+    <a href="/3.3-markov/" style="color:#2563eb;text-decoration:none">マルコフ連鎖と確率過程の基礎 →</a>
+  </nav>
+  <h1 style="font-size:1.6rem;font-weight:700;border-bottom:2px solid #2563eb;padding-bottom:8px;margin-bottom:12px">時系列解析</h1>
+  <p style="color:#555;margin-bottom:20px;font-size:1.05rem">「過去」から「未来」を読み解く、時間の流れを考慮した統計学。</p>
+  <div style="white-space:pre-line;color:#333">このモジュールで学ぶこと
 
-  <p style="color:#444;margin-bottom:16px">統計検定準1級の合格を目指す方のための学習サイトです。確率論・推測統計・多変量解析・ベイズ統計・時系列分析など全出題範囲を36の学習モジュールに分けて解説しています。数学的な素養が中学〜高校レベルの方でも理解できるよう、すべての概念を日常の具体例から説明します。</p>
+「昨日の気温が高かったから、今日のアイス売上も多いだろう」——このように過去が未来に影響するデータの分析が時系列解析です。このモジュールでは、データの中に潜む「時間のルール」（トレンド・季節性・自己相関）を発見し、ARIMAモデルで未来を予測する方法を学びます。
 
-  <p style="color:#444;margin-bottom:24px">各モジュールにはインタラクティブなグラフ（分布の形をスライダーで確認）と10問の確認クイズが付いています。学習進捗はブラウザに自動保存されます。</p>
+ アイスクリーム売上には「3つのルール」が隠れている
 
-  <section style="margin-bottom:28px;background:#f0f7ff;padding:16px;border-radius:8px">
-    <h2 style="font-size:1.1rem;font-weight:700;margin-bottom:12px;color:#1e3a5f">このサイトで学べること</h2>
-    <ul style="color:#444;padding-left:20px;margin:0;line-height:2">
-      <li><strong>第1章（23モジュール）</strong>：確率の公理・各種確率分布・標本分布・点推定・区間推定・仮説検定・漸近理論</li>
-      <li><strong>第2章（7モジュール）</strong>：重回帰分析・主成分分析・判別分析・因子分析・クラスター分析・GLM・多変量解析</li>
-      <li><strong>第3章（6モジュール）</strong>：ベイズ統計・時系列分析・マルコフ連鎖・分割表・生存時間解析・シミュレーション</li>
-    </ul>
-  </section>
+あるアイスクリームショップの月次売上（万円）を見てみましょう：
 
-  <h2 style="font-size:1.3rem;font-weight:700;margin-bottom:12px">学習モジュール一覧</h2>
-  <ul style="list-style:none;padding:0">
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.1-probability/" style="color:#2563eb;font-weight:600;text-decoration:none">確率の公理と包除原理</a><br><span style="color:#555;font-size:0.9rem">コルモゴロフの公理・補事象・包除原理——確率論の数学的基礎を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.2-conditional/" style="color:#2563eb;font-weight:600;text-decoration:none">条件付き確率と統計的独立</a><br><span style="color:#555;font-size:0.9rem">条件付き確率の定義・乗法定理・統計的独立——「前提が変わると確率が変わる」仕組みを学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.3-total-prob/" style="color:#2563eb;font-weight:600;text-decoration:none">全確率の定理とベイズの定理</a><br><span style="color:#555;font-size:0.9rem">「結果から原因を推測する」全確率の定理とベイズの定理を具体的な病気検査の例で学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.4-dist-basics/" style="color:#2563eb;font-weight:600;text-decoration:none">確率分布の基礎関数</a><br><span style="color:#555;font-size:0.9rem">PMF・PDF・CDF・期待値・分散——確率分布を数学的に記述する道具を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.5-dist-features/" style="color:#2563eb;font-weight:600;text-decoration:none">分布の特性値：歪度・尖度・MGF</a><br><span style="color:#555;font-size:0.9rem">歪度・尖度・変動係数・MGF——分布の「形」とモーメントの道具を習得します。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.5b-correlation/" style="color:#2563eb;font-weight:600;text-decoration:none">相関・偏相関・条件付き期待値</a><br><span style="color:#555;font-size:0.9rem">相関係数・偏相関係数・全期待値の法則——多変数の関係を分析する道具を習得します。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.6-binomial/" style="color:#2563eb;font-weight:600;text-decoration:none">二項分布族：ベルヌーイ・二項・超幾何分布</a><br><span style="color:#555;font-size:0.9rem">「成功・失敗の繰り返し」から生まれる離散分布（ベルヌーイ・二項・超幾何）と離散一様分布を整理します。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.7-poisson/" style="color:#2563eb;font-weight:600;text-decoration:none">ポアソン分布族：ポアソン・幾何・多項分布</a><br><span style="color:#555;font-size:0.9rem">稀な事象の件数、待ち時間、多択の結果——3つの分布を使い分けます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.8-continuous/" style="color:#2563eb;font-weight:600;text-decoration:none">連続型分布の基礎：指数・ガンマ・ベータ・コーシー・対数正規</a><br><span style="color:#555;font-size:0.9rem">「待ち時間」から「比率」まで、正規分布の仲間たちを使い分けます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.9-multivariate/" style="color:#2563eb;font-weight:600;text-decoration:none">多変量正規分布・変数変換・極値分布</a><br><span style="color:#555;font-size:0.9rem">多次元正規分布の性質、ヤコビアンによる変数変換、最大値の極限分布を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.10-normal-dist/" style="color:#2563eb;font-weight:600;text-decoration:none">正規分布の性質</a><br><span style="color:#555;font-size:0.9rem">PDF・68-95-99.7ルール・歪度・尖度・MGF——正規分布を深く理解します。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.11-lln-clt/" style="color:#2563eb;font-weight:600;text-decoration:none">大標本理論と推定量の性質</a><br><span style="color:#555;font-size:0.9rem">大数の法則・中心極限定理・スルスキーの定理——「サンプルが増えると何が保証されるか」を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.12-sampling/" style="color:#2563eb;font-weight:600;text-decoration:none">標本分布の相互関係 ($t, \chi^2, F$)</a><br><span style="color:#555;font-size:0.9rem">母分散がわからない…そんな「現場のジレンマ」を解決する分布たちです。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.13-sufficient-stats/" style="color:#2563eb;font-weight:600;text-decoration:none">十分統計量と順序統計量</a><br><span style="color:#555;font-size:0.9rem">ネイマンの分解定理による十分統計量の特定と、順序統計量の分布理論を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.14-estimation/" style="color:#2563eb;font-weight:600;text-decoration:none">推定法：最尤推定法とモーメント法</a><br><span style="color:#555;font-size:0.9rem">最尤推定量（MLE）とモーメント推定量の導出と性質——「もっともらしいパラメータ」の求め方を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.15-estimator-props/" style="color:#2563eb;font-weight:600;text-decoration:none">推定量の性質：不偏性・一致性・有効性の理論</a><br><span style="color:#555;font-size:0.9rem">良い推定量の4条件・ガウス・マルコフの定理・クラーメル・ラオの不等式——推定量の品質を評価する理論を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.16-ci/" style="color:#2563eb;font-weight:600;text-decoration:none">信頼区間：1標本の推定</a><br><span style="color:#555;font-size:0.9rem">母平均・母比率・母分散の信頼区間の構成と正しい解釈を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.17-ci-advanced/" style="color:#2563eb;font-weight:600;text-decoration:none">信頼区間：2標本問題と発展的話題</a><br><span style="color:#555;font-size:0.9rem">2標本の信頼区間・被覆確率・片側信頼限界——区間推定の応用と正確な解釈を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.18-inference/" style="color:#2563eb;font-weight:600;text-decoration:none">推定・検定の理論的背景</a><br><span style="color:#555;font-size:0.9rem">P値の正しい読み方と、「見逃し」を防ぐ検出力の設計を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.19-testing-adv/" style="color:#2563eb;font-weight:600;text-decoration:none">検定の理論：ネイマン・ピアソンと大標本検定</a><br><span style="color:#555;font-size:0.9rem">最良の棄却域の理論（NP定理）と尤度比・ワルド・スコア検定——検定の数学的基礎を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.20-testing-applied/" style="color:#2563eb;font-weight:600;text-decoration:none">検定の実践：正規・適合度・ノンパラメトリック</a><br><span style="color:#555;font-size:0.9rem">正規分布の各種検定・適合度検定・ノンパラメトリック検定——試験頻出の実践的検定法を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.21-anova/" style="color:#2563eb;font-weight:600;text-decoration:none">分散分析 (ANOVA)</a><br><span style="color:#555;font-size:0.9rem">3つ以上のグループを「一気に」比較する、効率的な判断手法。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.22-asymptotic/" style="color:#2563eb;font-weight:600;text-decoration:none">漸近理論の基礎：フィッシャー情報量・MLE漸近正規性・デルタ法</a><br><span style="color:#555;font-size:0.9rem">MLE が「最も精密な推定量」であることの数学的根拠と、推定量変換の漸近分散の求め方を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/1.23-model-selection/" style="color:#2563eb;font-weight:600;text-decoration:none">KL情報量・AIC・クロスバリデーション</a><br><span style="color:#555;font-size:0.9rem">モデル間の「ズレ」を定量化するKL情報量から、AIC・CVによるモデル選択まで学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/2.1-regression/" style="color:#2563eb;font-weight:600;text-decoration:none">重回帰分析とモデル評価</a><br><span style="color:#555;font-size:0.9rem">「原因」から「結果」を予測するための、強力な方程式を組み立てます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/2.2-pca/" style="color:#2563eb;font-weight:600;text-decoration:none">主成分分析 (PCA)</a><br><span style="color:#555;font-size:0.9rem">100個の項目を、3つの「本質」に凝縮する魔法のテクニック。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/2.3-discriminant/" style="color:#2563eb;font-weight:600;text-decoration:none">判別分析とマハラノビス距離</a><br><span style="color:#555;font-size:0.9rem">「どのグループに属するか」を数式で判定し、外れ値を正確に見抜く技術。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/2.4-factor/" style="color:#2563eb;font-weight:600;text-decoration:none">因子分析</a><br><span style="color:#555;font-size:0.9rem">目に見えない「性格」や「価値観」を、アンケートデータからあぶり出す。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/2.5-clustering/" style="color:#2563eb;font-weight:600;text-decoration:none">クラスター分析</a><br><span style="color:#555;font-size:0.9rem">「似たもの同士をグループに分ける」自動分類の理論と手法を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/2.6-glm/" style="color:#2563eb;font-weight:600;text-decoration:none">質的回帰と一般化線形モデル</a><br><span style="color:#555;font-size:0.9rem">「Yes/No」のデータを分析するロジスティック回帰とGLMの枠組みを学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/2.7-multivariate/" style="color:#2563eb;font-weight:600;text-decoration:none">その他の多変量解析手法</a><br><span style="color:#555;font-size:0.9rem">多次元尺度法・正準相関・対応分析・共分散構造分析など試験頻出の手法を網羅します。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/3.1-bayes/" style="color:#2563eb;font-weight:600;text-decoration:none">ベイズ推定とマルコフ連鎖</a><br><span style="color:#555;font-size:0.9rem">「今の確信」を「新しいデータ」でアップデートし続ける、進化する統計学。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/3.2-timeseries/" style="color:#2563eb;font-weight:600;text-decoration:none">時系列解析</a><br><span style="color:#555;font-size:0.9rem">「過去」から「未来」を読み解く、時間の流れを考慮した統計学。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/3.3-markov/" style="color:#2563eb;font-weight:600;text-decoration:none">マルコフ連鎖と確率過程の基礎</a><br><span style="color:#555;font-size:0.9rem">「次の状態は現在だけで決まる」確率過程の理論と、ランダムウォーク・ポアソン過程を学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/3.4-contingency/" style="color:#2563eb;font-weight:600;text-decoration:none">分割表の解析</a><br><span style="color:#555;font-size:0.9rem">カテゴリデータの関連性を測るオッズ比・連関係数から、対数線形モデルまで学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/3.5-survival/" style="color:#2563eb;font-weight:600;text-decoration:none">生存時間解析と十分統計量</a><br><span style="color:#555;font-size:0.9rem">打ち切りデータの扱い方・カプラン・マイヤー推定・Cox比例ハザードモデルを学びます。</span></li>
-<li style="margin-bottom:12px"><a href="/stats-pre1/3.6-simulation/" style="color:#2563eb;font-weight:600;text-decoration:none">シミュレーション手法と欠測値</a><br><span style="color:#555;font-size:0.9rem">ブートストラップ・モンテカルロ・欠測値のメカニズムとEMアルゴリズムを学びます。</span></li>
+1月：150万円（冬——低い）
+7月：520万円（夏——ピーク）
+翌1月：165万円（昨年より少し増えた）
+
+このデータには3つのパターンが混じっています：
+トレンド：年々売上が少しずつ伸びている（健康ブームの影響）
+季節性：夏は3倍以上売れ、冬は落ち込む（1年周期のパターン）
+自己相関：先週の売上が良いと今週も良い傾向がある
+
+時系列解析では、これらのパターンを数式で捉えて未来を予測します。
+
+自己相関：過去の自分が未来の自分に影響する
+
+自己相関係数（Autocorrelation Coefficient）とは、「ある時点の値」と「 期前の値」の相関係数です。例えばアイス売上の「12か月前との相関」が高ければ「去年の7月が良かったなら今年の7月も良い」というパターンが確認できます。
+
+ 試験頻出：
+自己相関が強い → 過去から予測できる構造がある
+自己相関がゼロ → ホワイトノイズ（完全にランダム。過去から未来を一切予測できない）
+
+ホワイトノイズ：平均0・分散一定・自己相関なし、という3条件を満たす系列です。時系列分析の目標は「残差がホワイトノイズになるモデルを見つけること」——残差がホワイトノイズなら「取り出せる情報はすべて取り出した」ことになります。
+
+ARIMAモデル：3つの部品を組み合わせる
+
+時系列データの予測で最も有名なモデルが ARIMA です。3つの要素の組み合わせです：
+
+AR（自己回帰: AutoRegressive）：過去の自分を参考にする。「昨日の売上が多ければ今日も多いだろう」
+I（差分: Integrated）：データの「坂道（トレンド）」を平らにして扱いやすくする操作
+MA（移動平均: Moving Average）：過去の「たまたまの外れ（誤差）」の影響を考慮する
+
+ただし、ARIMAモデルを使いこなすには重要な前提条件があります。それが「定常性」です。
+
+定常性：分析の「土台」
+
+ 例で考えましょう：常に右肩上がりの株価データは平均が時間とともに増え続けるため「非定常」です。一方、毎日の気温の「平均からのズレ」は平均もばらつきも時間によらず安定しているため「定常」です。
+
+定常とは？：平均やばらつきが、時間の経過に関わらず一定である状態
+
+「非定常」なデータはそのままではARIMAモデルがうまく使えません。差分をとるなどして「定常」なデータに変換するのが鉄則です。
+
+定常性を統計的に検定するには ADF検定（Augmented Dickey-Fuller検定） が代表的です。「単位根がある（＝非定常）」という帰無仮説を検定し、棄却されれば定常と判断します。
+
+状態空間モデル
+
+状態空間モデル（State Space Model）は「観測できない真の状態」が時間変化し、そこからノイズを含む「観測値」が生成されるという二層構造を持ちます：状態方程式  と観測方程式  の組み合わせです。
+
+ 試験頻出：ARIMAモデルは状態空間モデルの特殊ケースとして表現できます。状態空間モデルはARIMAより一般的な枠組みで、非定常・多変量・欠測値にも対応できます。
+
+ 準1級の重要トピック：スペクトル解析
+
+時系列データには「1年周期」「1週間周期」など複数のリズムが混ざっていることがあります。これらを分解して「どの周期のリズムが最も強いか」を可視化する手法がスペクトル解析です。音楽に例えると「曲の中に含まれる音程（周波数）の強さを調べること」に相当します。アイスの例では「365日周期（1年）」のリズムが最も強く現れます。成分分解とは「トレンド＋季節変動＋不規則変動」に分けるプロセスです（加法モデルは単純な足し合わせ、乗法モデルは掛け合わせで、季節変動の振れ幅がトレンドに比例して大きくなる場合は乗法モデルが適します）。</div>
+  <section style="margin-top:28px">
+  <h2 style="font-size:1.1rem;font-weight:700;margin-bottom:12px;color:#1e3a5f">確認クイズ（抜粋）</h2>
+  <div style="margin-bottom:12px;padding:12px;background:#f8fafc;border-radius:6px;border-left:3px solid #2563eb">
+  <p style="margin:0 0 6px;font-weight:600;color:#1e3a5f">Q1. 時系列データの統計的性質が時間に依存せず一定である性質を何と呼ぶ？</p>
+  <p style="margin:0;color:#444;font-size:0.92rem">A. 定常性</p>
+</div>
+<div style="margin-bottom:12px;padding:12px;background:#f8fafc;border-radius:6px;border-left:3px solid #2563eb">
+  <p style="margin:0 0 6px;font-weight:600;color:#1e3a5f">Q2. 自己回帰、移動平均、および差分を組み合わせた代表的な時系列モデルは？</p>
+  <p style="margin:0;color:#444;font-size:0.92rem">A. ARIMA</p>
+</div>
+<div style="margin-bottom:12px;padding:12px;background:#f8fafc;border-radius:6px;border-left:3px solid #2563eb">
+  <p style="margin:0 0 6px;font-weight:600;color:#1e3a5f">Q3. 状態空間モデルの「観測方程式」 の各要素の説明として正しいものはどれか？</p>
+  <p style="margin:0;color:#444;font-size:0.92rem">A.  は観測値、 は観測できない真の状態</p>
+</div>
+  <p style="margin-top:12px;font-size:0.9rem;color:#555">全10問のクイズはサイトのインタラクティブ版でお試しください。</p>
+</section><section style="margin-top:28px;padding:16px;background:#f8fafc;border-radius:8px">
+  <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 10px;color:#1e3a5f">第3章の他のモジュール</h2>
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px">
+    <li><a href="/3.1-bayes/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">ベイズ推定とマルコフ連鎖</a></li>
+    <li><a href="/3.3-markov/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">マルコフ連鎖と確率過程の基礎</a></li>
+    <li><a href="/3.4-contingency/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">分割表の解析</a></li>
+    <li><a href="/3.5-survival/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">生存時間解析と十分統計量</a></li>
+    <li><a href="/3.6-simulation/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">シミュレーション手法と欠測値</a></li>
   </ul>
-
-  <nav style="margin-top:32px;border-top:1px solid #ddd;padding-top:16px;display:flex;gap:16px;flex-wrap:wrap">
-    <a href="/stats-pre1/glossary/" style="color:#2563eb">用語集</a>
-    <a href="/stats-pre1/cheatsheet/" style="color:#2563eb">公式集</a>
-    <a href="/stats-pre1/guide/" style="color:#2563eb">試験ガイド</a>
-    <a href="/stats-pre1/faq/" style="color:#2563eb">よくある質問</a>
-    <a href="/stats-pre1/randomquiz/" style="color:#2563eb">ランダムクイズ</a>
-    <a href="/stats-pre1/about/" style="color:#2563eb">サイトについて</a>
-    <a href="/stats-pre1/privacy/" style="color:#2563eb;font-size:0.85rem">プライバシーポリシー</a>
+</section>
+  <nav style="margin-top:32px;border-top:1px solid #ddd;padding-top:16px;display:flex;gap:12px;font-size:0.9rem;flex-wrap:wrap">
+    <a href="/" style="color:#2563eb;text-decoration:none">← ホームへ戻る</a>
+    <a href="/3.1-bayes/" style="color:#2563eb;text-decoration:none">← ベイズ推定とマルコフ連鎖</a>
+    <a href="/3.3-markov/" style="color:#2563eb;text-decoration:none">マルコフ連鎖と確率過程の基礎 →</a>
+  </nav>
+  <nav style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:0.82rem">
+    <a href="/glossary/" style="color:#6b7280;text-decoration:none">用語集</a>
+    <a href="/cheatsheet/" style="color:#6b7280;text-decoration:none">公式集</a>
+    <a href="/faq/" style="color:#6b7280;text-decoration:none">よくある質問</a>
+    <a href="/randomquiz/" style="color:#6b7280;text-decoration:none">ランダムクイズ</a>
+    <a href="/privacy/" style="color:#6b7280;text-decoration:none">プライバシーポリシー</a>
   </nav>
   <p style="font-size:0.8rem;color:#888;margin-top:16px;border-top:1px solid #eee;padding-top:12px">※本サイトは個人による学習支援サイトであり、統計質保証推進協会・日本統計学会の公式サイトではありません。</p>
 </article></div>

@@ -42,7 +42,7 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="../assets/index-VBKSmpRM.js"></script>
+    <script type="module" crossorigin src="../assets/index-CTyk1lo8.js"></script>
     <link rel="stylesheet" crossorigin href="../assets/index-DKr98dQJ.css">
   <meta name="robots" content="index, follow" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"統計検定 準1級 学習リファレンス","url":"https://study-apps.com/stats-pre1/","description":"確率分布・推測統計・多変量解析・ベイズ統計をインタラクティブな図と数式で解説する統計検定準1級対策サイト。","inLanguage":"ja"}</script>
@@ -60,7 +60,7 @@
   <p style="color:#555;margin-bottom:20px;font-size:1.05rem">相関係数・偏相関係数・全期待値の法則——多変数の関係を分析する道具を習得します。</p>
   <div style="white-space:pre-line;color:#333">このモジュールで学ぶこと
 
-前のモジュールで1変数の分布の特性値（歪度・尖度・変動係数）を学びました。ここでは視野を2変数以上に広げます。「2変数の間にどんな線形関係があるか」を測る相関係数、「第3の変数の影響を除いた純粋な関係」を測る偏相関係数、そして「ある情報を得たとき期待値がどう変わるか」を扱う条件付き期待値を学びます。これらは回帰分析・ANOVA・ベイズ統計すべての基礎になります。
+前のモジュールで1変数の分布の特性値（歪度・尖度・変動係数）を学びました。ここでは視野を2変数以上に広げます。「2変数の間にどんな線形関係があるか」を測る相関係数、「第3の変数の影響を除いた純粋な関係」を測る偏相関係数、そして「ある情報を得たとき期待値がどう変わるか」を扱う条件付き期待値を学びます。これらは後の章で学ぶ回帰分析・多変量解析すべての基礎となる考え方です。
 
  「制御する」という発想
 
@@ -70,12 +70,12 @@
 
 1.4で学んだ共分散  は2変数の「関係の方向と大きさ」を表しますが、単位に依存するという弱点があります。これを標準化（単位を消す）したものがピアソン相関係数（Pearson Correlation Coefficient）です：
 
-値域は （コーシー・シュワルツ不等式  より）
+値域は （ という不等式から導かれる）
 ：完全な正の線形関係、：完全な負の線形関係、：線形関係なし
 
 重要な注意：（無相関）は「独立」を意味しない。たとえば （ が平均0の対称分布）では  でも  と  の間には強い非線形の関係があります。
 
- 試験頻出：独立  無相関（）は常に成立しますが、逆（無相関  独立）は一般に成立しません。ただし多変量正規分布に限り「無相関  独立」が成立します（1.9モジュールで詳述）。
+ 試験頻出：独立  無相関（）は常に成立しますが、逆（無相関  独立）は一般に成立しません。ただし多変量正規分布に限り「無相関  独立」が成立します（後の多変量分布の章で詳述）。
 
 偏相関係数：擬似相関を見破る
 
@@ -99,7 +99,7 @@
 
 全分散の法則（Law of Total Variance）：
 
-全体の分散は「各グループ内のばらつきの平均（群内変動）」と「グループ平均のばらつき（群間変動）」に分解されます。これは分散分析（ANOVA）の  とまったく同じ構造です。</div>
+全体の分散は「各グループ内のばらつきの平均（群内変動）」と「グループ平均のばらつき（群間変動）」に分解されます。後の章で学ぶ分散分析では、この分解が  という形で直接現れます。</div>
   <section style="margin-top:28px">
   <h2 style="font-size:1.1rem;font-weight:700;margin-bottom:12px;color:#1e3a5f">確認クイズ（抜粋）</h2>
   <div style="margin-bottom:12px;padding:12px;background:#f8fafc;border-radius:6px;border-left:3px solid #2563eb">

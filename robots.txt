@@ -6,3 +6,4 @@ Sitemap: https://study-apps.com/stats-pre1/sitemap.xml
 Sitemap: https://study-apps.com/stats-g2/sitemap.xml
 Sitemap: https://study-apps.com/stats-g3/sitemap.xml
 Sitemap: https://study-apps.com/mhm-g3/sitemap.xml
+Sitemap: https://study-apps.com/densha_asobi/sitemap.xml

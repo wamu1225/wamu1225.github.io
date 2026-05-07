@@ -42,7 +42,7 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="../assets/index-DYn_bsTp.js"></script>
+    <script type="module" crossorigin src="../assets/index-DHL0X6qm.js"></script>
     <link rel="stylesheet" crossorigin href="../assets/index-DKr98dQJ.css">
   <meta name="robots" content="index, follow" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"統計検定 準1級 学習リファレンス","url":"https://study-apps.com/stats-pre1/","description":"確率分布・推測統計・多変量解析・ベイズ統計をインタラクティブな図と数式で解説する統計検定準1級対策サイト。","inLanguage":"ja"}</script>
@@ -88,11 +88,15 @@
 
  試験頻出：「 の正規近似」では 、「 の正規近似」では  とします（ は近似に使う正規確率変数）。
 
+ポアソン分布で「何件起きるか」がわかりました。次は視点を変えて「初めて成功するまでに何回かかるか」という待ち回数の分布を学びます。
+
 幾何分布・負の二項分布
 
 「コインを投げて初めて表が出るまでの回数」——前モジュールで学んだベルヌーイ試行（1回の成功確率 、各試行が独立）を繰り返す状況で、初めての成功まで何回かかるかを記述するのが幾何分布（Geometric Distribution）です。
 
-「 回目に初めて成功する」ためには、「最初の  回が独立に失敗（各回の確率 ）し、 回目が成功（確率 ）」という事象が起きればよいです。各試行の独立性から確率を掛け合わせると  が得られます。期待値 、分散 。
+「 回目に初めて成功する」とは——最初の  回が独立に失敗し（各回の確率 ）、ちょうど  回目に成功する（確率 ）ことです。各試行が独立なので確率を掛け合わせると：
+
+期待値 （成功確率  の逆数——平均  回試行すれば1回成功する）、分散 。
 
  無記憶性（Memoryless Property）：——「すでに  回失敗していても、あと  回以内に成功する確率は最初から変わらない」性質。連続型では指数分布が同じ性質を持ちます。
 

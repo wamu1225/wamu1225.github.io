@@ -2,173 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ロジスティック回帰と一般化線形モデル | 統計検定 準1級 学習リファレンス</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://study-apps.com/stats-pre1/2.6-glm/" />
+    <meta http-equiv="refresh" content="0;url=https://study-apps.com/stats-pre1/2.6-glm/" />
+    <title>ロジスティック回帰と一般化線形モデル | study-apps.com</title>
     <meta name="description" content="「Yes/No」のデータを分析するロジスティック回帰とGLMの枠組みを学びます。" />
-    <meta property="og:title" content="ロジスティック回帰と一般化線形モデル | 統計検定 準1級 学習リファレンス" />
-    <meta property="og:description" content="「Yes/No」のデータを分析するロジスティック回帰とGLMの枠組みを学びます。" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://study-apps.com/2.6-glm/" />
-    <link rel="canonical" href="https://study-apps.com/2.6-glm/" />
-    <meta property="og:image" content="https://study-apps.com/stats-pre1/ogp.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="ロジスティック回帰と一般化線形モデル | 統計検定 準1級 学習リファレンス" />
-    <meta name="twitter:description" content="「Yes/No」のデータを分析するロジスティック回帰とGLMの枠組みを学びます。" />
-    <meta name="twitter:image" content="https://study-apps.com/stats-pre1/ogp.png" />
-    <meta name="google-site-verification" content="4pum38LAnuH3cknkYbdBLJSixlRlpgGO8-43CWB6kps" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6K27V3P4S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-G6K27V3P4S');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9102538151148380"
-     crossorigin="anonymous"></script>
-    <script>
-      // Restore URL after GitHub Pages 404 redirect (?/path/ → /stats-pre1/path/)
-      (function () {
-        var s = window.location.search;
-        if (s[1] === '/') {
-          var decoded = s.slice(1).split('&').map(function (p) { return p.replace(/~and~/g, '&'); });
-          window.history.replaceState(
-            null, null,
-            decoded[0] +
-            (decoded.slice(1).length ? '?' + decoded.slice(1).join('&') : '') +
-            window.location.hash
-          );
-        }
-      })();
-    </script>
-    <script type="module" crossorigin src="../assets/index-Dk1mhxpL.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/index-DKr98dQJ.css">
-  <meta name="robots" content="index, follow" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"統計検定 準1級 学習リファレンス","url":"https://study-apps.com/stats-pre1/","description":"確率分布・推測統計・多変量解析・ベイズ統計をインタラクティブな図と数式で解説する統計検定準1級対策サイト。","inLanguage":"ja"}</script>
-  <meta name="robots" content="index, follow" />
-  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://study-apps.com/"},{"@type":"ListItem","position":2,"name":"第2章","item":"https://study-apps.com/"},{"@type":"ListItem","position":3,"name":"ロジスティック回帰と一般化線形モデル","item":"https://study-apps.com/2.6-glm/"}]},{"@context":"https://schema.org","@type":"Article","headline":"ロジスティック回帰と一般化線形モデル","description":"「Yes/No」のデータを分析するロジスティック回帰とGLMの枠組みを学びます。","url":"https://study-apps.com/2.6-glm/","inLanguage":"ja","author":{"@type":"Organization","name":"study-apps.com","url":"https://study-apps.com"},"publisher":{"@type":"Organization","name":"study-apps.com","url":"https://study-apps.com"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ロジスティック回帰でモデル化する「ロジット」とは何か？","acceptedAnswer":{"@type":"Answer","text":"（対数オッズ）"}},{"@type":"Question","name":"ロジスティック回帰の係数  の解釈として正しいものはどれか？","acceptedAnswer":{"@type":"Answer","text":"が1増えるとオッズが  倍になる"}},{"@type":"Question","name":"GLMの「リンク関数」の役割はどれか？","acceptedAnswer":{"@type":"Answer","text":"期待値と線形予測子をつなぐ変換"}}]}]</script>
+    <script>window.location.replace('https://study-apps.com/stats-pre1/2.6-glm/');</script>
+    <style>
+      body { font-family: "Yu Gothic UI","Hiragino Sans",sans-serif; max-width:640px; margin:80px auto; padding:0 20px; line-height:1.8; color:#1f2937; }
+      a { color: #2563eb; }
+    </style>
   </head>
   <body>
-    <div id="root"><article id="static-fallback" style="font-family:sans-serif;line-height:1.7;max-width:860px;margin:0 auto;padding:24px 16px">
-  <nav style="margin-bottom:16px;display:flex;gap:12px;font-size:0.9rem">
-    <a href="/" style="color:#2563eb;text-decoration:none">← ホーム</a>
-    <a href="/2.5-clustering/" style="color:#2563eb;text-decoration:none">← クラスター分析</a>
-    <a href="/2.7-multivariate/" style="color:#2563eb;text-decoration:none">正準相関・対応分析・共分散構造分析 →</a>
-  </nav>
-  <h1 style="font-size:1.6rem;font-weight:700;border-bottom:2px solid #2563eb;padding-bottom:8px;margin-bottom:12px">ロジスティック回帰と一般化線形モデル</h1>
-  <p style="color:#555;margin-bottom:20px;font-size:1.05rem">「Yes/No」のデータを分析するロジスティック回帰とGLMの枠組みを学びます。</p>
-  <div style="white-space:pre-line;color:#333">このモジュールで学ぶこと
-
-「新薬を投与すると完治するか（Yes/No）を予測したい」——目的変数が連続値でなく「0か1か」の二値のとき、通常の回帰では確率が0〜1の範囲を超えてしまいます。このモジュールでは二値・カウント・その他の非正規データへの回帰を可能にするロジスティック回帰と一般化線形モデル（GLM）を学びます。
-
- 「正規分布でない目的変数」への対応
-
-通常の線形回帰は誤差が正規分布に従うと仮定します。しかし：
-二値データ（合否・生死）：ベルヌーイ/二項分布
-カウントデータ（事故件数・来店人数）：ポアソン分布
-比率データ（0〜1）：ベータ分布
-
-これらを統一的に扱う枠組みが一般化線形モデル（GLM: Generalized Linear Model）です。
-
-ロジスティック回帰
-
-「年齢・収入・健康状態から、糖尿病発症（有/無）を予測する」——これがロジスティック回帰の典型例です。
-
-直接  を予測しますが、確率は0〜1に収まる必要があります。そこでロジット変換を使います：
-
- はオッズ（odds）——「成功/失敗の比率」です。これの対数（対数オッズまたはロジット）を線形式でモデル化します。
-
-解を整理すると：（シグモイド関数）。
-
-係数の解釈： が1増えると、オッズが  倍になります（オッズ比）。
-
-パラメータは最尤法で推定します（線形回帰のような解析解はなく、反復計算が必要）。
-
- 試験頻出：ロジスティック回帰の係数  の解釈は「 が1増えるとオッズが  倍」。オッズ比  なら正の効果、 なら負の効果です。
-
-プロビット分析
-
-「薬の投与量が増えるにつれて副作用が出る確率はどう変化するか」——毒性試験ではこのような「投与量 → 反応確率」の関係をモデル化します。ロジスティック回帰と同じ二値目的変数を扱いますが、確率の増え方を表す関数（リンク関数）が異なるのがプロビット分析です：
-
- は標準正規分布の累積分布関数の逆関数（プロビット関数）です。結果はロジスティック回帰と似ており、主に毒性研究や心理測定で使われます。
-
-ロジスティックとプロビットの違いは裾の形状にあります——ロジスティック分布は正規分布より裾がやや重いです。
-
-一般化線形モデル（GLM）
-
-「交通事故の日別発生件数（0件・1件・2件…）と気象条件の関係を調べたい」——件数は非負整数でポアソン分布に従いやすく、通常の線形回帰では予測値が負になる問題があります。ロジスティック回帰もプロビット分析も、じつはより大きな枠組み「一般化線形モデル（GLM: Generalized Linear Model）」の特殊ケースです。GLM は次の3つの要素で構成されます：
-
-確率分布（Random Component）： の分布族（指数型分布族：正規・二項・ポアソン・ガンマなど）
-線形予測子：
-リンク関数（Link Function）：——「期待値」を「線形予測子」につなぐ
-
-主なGLMの組み合わせ（各リンク関数は「確率・カウントの値域を実数軸に変換する」自然な選択です）：
-
-正規分布 + 恒等リンク ：通常の線形回帰（ はすでに実数）
-二項分布 + ロジットリンク ：ロジスティック回帰（ を実数全体に変換）
-ポアソン分布 + 対数リンク ：ポアソン回帰（カウントデータ； を実数全体に変換し負の予測値を防ぐ）
-
-パラメータ推定はスコア方程式（最尤法）を反復法（IRLS: Iteratively Reweighted Least Squares）で解きます。
-
-回帰診断法
-
-モデルを構築しても「残差に特定の時間パターンがある」「特定の1人の観測値が回帰直線を大きく引きずっている」などの問題があれば、モデルの仮定が破られて推定が信頼できません。モデルの健全性を確認する一連の手順が回帰診断法です。
-
-残差分析：標準化残差のプロット——ランダムな散布が望ましく、パターンがあれば仮定違反を示します。
-
-系列相関（Serial Correlation）：時系列データで残差が連続して正または負になる現象。DW比（Durbin-Watson統計量） で検出します（ なら無相関、 なら正の系列相関）。
-
-はずれ値と影響度：leverage（てこ比） は「 番目のデータが予測値に与える影響の大きさ」を表します。 は高影響点の目安です（：パラメータ数）。Q-Qプロットは残差の正規性を視覚的に確認します。
-
- 試験頻出：DW比の解釈—— は正の系列相関（残差が同じ符号で連続）、 は負の系列相関を示します。
-
-ニューラルネットワークモデル
-
-GLMが「線形予測子 + リンク関数」でさまざまな分布を扱う枠組みであるなら、その非線形拡張がニューラルネットワーク（Neural Network）です。
-
-入力層・隠れ層・出力層からなる多層構造で、各層で非線形変換（活性化関数：ReLU・sigmoid など）を適用します。十分な隠れユニット数があれば任意の関数を近似できる（普遍近似定理）ため、回帰・分類・パターン認識など幅広く使われます。
-
-準1級では「一般化線形モデルのさらなる拡張として、非線形な関係を柔軟にモデル化できる手法」として位置づけられます。パラメータの多さから過学習が起きやすいため、正則化（ドロップアウト・L2正則化）やクロスバリデーションによるモデル選択が重要です。</div>
-  <section style="margin-top:28px">
-  <h2 style="font-size:1.1rem;font-weight:700;margin-bottom:12px;color:#1e3a5f">確認クイズ（抜粋）</h2>
-  <div style="margin-bottom:12px;padding:12px;background:#f8fafc;border-radius:6px;border-left:3px solid #2563eb">
-  <p style="margin:0 0 6px;font-weight:600;color:#1e3a5f">Q1. ロジスティック回帰でモデル化する「ロジット」とは何か？</p>
-  <p style="margin:0;color:#444;font-size:0.92rem">A. （対数オッズ）</p>
-</div>
-<div style="margin-bottom:12px;padding:12px;background:#f8fafc;border-radius:6px;border-left:3px solid #2563eb">
-  <p style="margin:0 0 6px;font-weight:600;color:#1e3a5f">Q2. ロジスティック回帰の係数  の解釈として正しいものはどれか？</p>
-  <p style="margin:0;color:#444;font-size:0.92rem">A.  が1増えるとオッズが  倍になる</p>
-</div>
-<div style="margin-bottom:12px;padding:12px;background:#f8fafc;border-radius:6px;border-left:3px solid #2563eb">
-  <p style="margin:0 0 6px;font-weight:600;color:#1e3a5f">Q3. GLMの「リンク関数」の役割はどれか？</p>
-  <p style="margin:0;color:#444;font-size:0.92rem">A. 期待値と線形予測子をつなぐ変換</p>
-</div>
-  <p style="margin-top:12px;font-size:0.9rem;color:#555">全10問のクイズはサイトのインタラクティブ版でお試しください。</p>
-</section><section style="margin-top:28px;padding:16px;background:#f8fafc;border-radius:8px">
-  <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 10px;color:#1e3a5f">第2章の他のモジュール</h2>
-  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px">
-    <li><a href="/2.1-regression/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">重回帰分析とモデル評価</a></li>
-    <li><a href="/2.2-pca/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">主成分分析 (PCA)</a></li>
-    <li><a href="/2.3-discriminant/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">判別分析とマハラノビス距離</a></li>
-    <li><a href="/2.4-factor/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">因子分析</a></li>
-    <li><a href="/2.5-clustering/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">クラスター分析</a></li>
-    <li><a href="/2.7-multivariate/" style="color:#2563eb;text-decoration:none;font-size:0.9rem;background:#fff;border:1px solid #dbeafe;border-radius:4px;padding:3px 10px;display:inline-block">正準相関・対応分析・共分散構造分析</a></li>
-  </ul>
-</section>
-  <nav style="margin-top:32px;border-top:1px solid #ddd;padding-top:16px;display:flex;gap:12px;font-size:0.9rem;flex-wrap:wrap">
-    <a href="/" style="color:#2563eb;text-decoration:none">← ホームへ戻る</a>
-    <a href="/2.5-clustering/" style="color:#2563eb;text-decoration:none">← クラスター分析</a>
-    <a href="/2.7-multivariate/" style="color:#2563eb;text-decoration:none">正準相関・対応分析・共分散構造分析 →</a>
-  </nav>
-  <nav style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:0.82rem">
-    <a href="/glossary/" style="color:#6b7280;text-decoration:none">用語集</a>
-    <a href="/cheatsheet/" style="color:#6b7280;text-decoration:none">公式集</a>
-    <a href="/faq/" style="color:#6b7280;text-decoration:none">よくある質問</a>
-    <a href="/randomquiz/" style="color:#6b7280;text-decoration:none">ランダムクイズ</a>
-    <a href="/privacy/" style="color:#6b7280;text-decoration:none">プライバシーポリシー</a>
-  </nav>
-  <p style="font-size:0.8rem;color:#888;margin-top:16px;border-top:1px solid #eee;padding-top:12px">※本サイトは個人による学習支援サイトであり、統計質保証推進協会・日本統計学会の公式サイトではありません。</p>
-</article></div>
+    <p>このページは <a href="https://study-apps.com/stats-pre1/2.6-glm/">ロジスティック回帰と一般化線形モデル（統計検定 準1級 学習リファレンス）</a> に移動しました。自動で転送されない場合はリンクをクリックしてください。</p>
+    <p><a href="https://study-apps.com/">study-apps.com トップへ</a></p>
   </body>
 </html>

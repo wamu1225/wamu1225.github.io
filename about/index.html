@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>サイトについて | 統計検定 準1級 学習リファレンス</title>
-    <meta name="description" content="統計検定準1級 学習リファレンスについて。サイトの目的・コンテンツ構成・利用方法を説明します。" />
-    <meta property="og:title" content="サイトについて | 統計検定 準1級 学習リファレンス" />
-    <meta property="og:description" content="統計検定準1級 学習リファレンスについて。サイトの目的・コンテンツ構成・利用方法を説明します。" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://study-apps.com/about/" />
+    <title>サイトについて｜study-apps.com</title>
+    <meta name="description" content="study-apps.com の運営目的・コンテンツの作り方・品質基準（A〜F フレームワーク）について。個人運営の学習支援ポータルとしてのミッションを説明します。" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://study-apps.com/about/" />
-    <meta property="og:image" content="https://study-apps.com/stats-pre1/ogp.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://study-apps.com/about/" />
+    <meta property="og:title" content="サイトについて｜study-apps.com" />
+    <meta property="og:description" content="study-apps.com の運営目的・コンテンツの作り方・品質基準について。個人運営の学習支援ポータル。" />
+    <meta property="og:image" content="https://study-apps.com/ogp.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="サイトについて | 統計検定 準1級 学習リファレンス" />
-    <meta name="twitter:description" content="統計検定準1級 学習リファレンスについて。サイトの目的・コンテンツ構成・利用方法を説明します。" />
-    <meta name="twitter:image" content="https://study-apps.com/stats-pre1/ogp.png" />
-    <meta name="google-site-verification" content="4pum38LAnuH3cknkYbdBLJSixlRlpgGO8-43CWB6kps" />
+    <meta name="twitter:title" content="サイトについて｜study-apps.com" />
+    <meta name="twitter:description" content="study-apps.com の運営目的・コンテンツの作り方・品質基準について。" />
+    <meta name="twitter:image" content="https://study-apps.com/ogp.png" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6K27V3P4S"></script>
     <script>
@@ -27,70 +27,116 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9102538151148380"
      crossorigin="anonymous"></script>
-    <script>
-      // Restore URL after GitHub Pages 404 redirect (?/path/ → /stats-pre1/path/)
-      (function () {
-        var s = window.location.search;
-        if (s[1] === '/') {
-          var decoded = s.slice(1).split('&').map(function (p) { return p.replace(/~and~/g, '&'); });
-          window.history.replaceState(
-            null, null,
-            decoded[0] +
-            (decoded.slice(1).length ? '?' + decoded.slice(1).join('&') : '') +
-            window.location.hash
-          );
-        }
-      })();
-    </script>
-    <script type="module" crossorigin src="../assets/index-Dk1mhxpL.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/index-DKr98dQJ.css">
-  <meta name="robots" content="index, follow" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"統計検定 準1級 学習リファレンス","url":"https://study-apps.com/stats-pre1/","description":"確率分布・推測統計・多変量解析・ベイズ統計をインタラクティブな図と数式で解説する統計検定準1級対策サイト。","inLanguage":"ja"}</script>
-  <meta name="robots" content="index, follow" />
+    <style>
+      *,*::before,*::after { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Yu Gothic UI","Yu Gothic","Hiragino Sans","Meiryo",sans-serif;
+        color: #1f2937;
+        background: #f8fafc;
+        line-height: 1.85;
+      }
+      a { color: #2563eb; }
+      .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+      header.site { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: #fff; padding: 40px 0; }
+      header.site h1 { margin: 0; font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 800; }
+      header.site .crumb { margin: 0 0 8px; font-size: 0.85rem; color: #dbeafe; }
+      header.site .crumb a { color: #fff; text-decoration: underline; }
+      main { padding: 40px 0 60px; }
+      article { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 32px 28px; }
+      article h2 {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: #0f172a;
+        border-left: 5px solid #2563eb;
+        padding-left: 10px;
+        margin: 28px 0 12px;
+      }
+      article h2:first-of-type { margin-top: 0; }
+      article p { margin: 0 0 14px; color: #374151; }
+      article ul { padding-left: 22px; color: #374151; }
+      article li { margin-bottom: 6px; }
+      .grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 1fr;
+        margin: 12px 0 18px;
+      }
+      .item {
+        background: #f8fafc;
+        border-left: 3px solid #2563eb;
+        padding: 12px 14px;
+        border-radius: 4px;
+      }
+      .item strong { color: #1e3a8a; }
+      footer.site { background: #0f172a; color: #cbd5e1; padding: 24px 0; font-size: 0.85rem; }
+      footer.site nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+      footer.site nav a { color: #93c5fd; text-decoration: none; }
+    </style>
   </head>
   <body>
-    <div id="root"><article id="static-fallback" style="font-family:sans-serif;line-height:1.7;max-width:860px;margin:0 auto;padding:24px 16px">
-  <nav style="margin-bottom:16px"><a href="/" style="color:#2563eb;text-decoration:none">← ホームへ戻る</a></nav>
-  <h1 style="font-size:1.6rem;font-weight:700;border-bottom:2px solid #2563eb;padding-bottom:8px;margin-bottom:20px">サイトについて</h1>
+    <header class="site">
+      <div class="container">
+        <p class="crumb"><a href="/">ホーム</a> / サイトについて</p>
+        <h1>サイトについて</h1>
+      </div>
+    </header>
 
-  <section style="margin-bottom:28px">
-    <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:10px">このサイトについて</h2>
-    <p style="color:#444">「統計検定 準1級 学習リファレンス」は、統計検定準1級の合格を目指す方のために作られた個人運営の学習支援サイトです。確率論・推測統計・多変量解析・ベイズ統計・時系列分析など準1級の全出題範囲を36の学習モジュールに分けて解説しています。</p>
-    <p style="color:#444">数学的な素養が中学〜高校レベルの方でも理解できるよう、すべての概念を「具体的な日常の例」から出発し、直感的な説明を経て数式・理論へと進む構成になっています。インタラクティブなグラフで分布の形を視覚的に確認し、各モジュール10問のクイズで理解度を確認できます。</p>
-    <p style="color:#888;font-size:0.9rem;border-left:3px solid #fbbf24;padding-left:12px;margin-top:12px">本サイトは個人による学習支援サイトであり、統計質保証推進協会および日本統計学会の公式サイトではありません。掲載内容は個人の見解に基づくものであり、公式の情報を保証するものではありません。</p>
-  </section>
+    <main>
+      <div class="container">
+        <article>
 
-  <section style="margin-bottom:28px">
-    <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:10px">コンテンツ構成</h2>
-    <ul style="color:#444;padding-left:20px;line-height:2">
-      <li><strong>学習モジュール（全36モジュール・3章構成）</strong>：各モジュールに本文・インタラクティブグラフ・10問クイズ</li>
-      <li><strong>第1章（23モジュール）</strong>：確率論の基礎・各種確率分布・推測統計（推定・検定・漸近理論）</li>
-      <li><strong>第2章（7モジュール）</strong>：多変量解析（回帰分析・主成分分析・判別分析・因子分析・クラスター・GLM）</li>
-      <li><strong>第3章（6モジュール）</strong>：ベイズ統計・時系列分析・マルコフ連鎖・分割表・生存時間・シミュレーション</li>
-      <li><strong>用語集</strong>：準1級頻出用語の解説（英語名・難易度レベル付き）</li>
-      <li><strong>公式集</strong>：全分野の重要公式・定理を一覧（印刷対応）</li>
-      <li><strong>試験ガイド</strong>：試験概要・出題範囲・学習の進め方</li>
-      <li><strong>全範囲ランダムクイズ</strong>：全モジュールから横断的に出題</li>
-    </ul>
-  </section>
+          <h2>study-apps.com のミッション</h2>
+          <p>study-apps.com は「独学者が腑に落ちる説明を、無料で得られる場所」を目指して、個人で運営している学習支援サイト群のポータルです。教科書を読むだけでは行間が読みにくい・式の意味がわからない・実務でどう使うかが想像できない、というつまずきを減らすことを目的としています。</p>
+          <p>あくまで「教科書を補完する立場」であり、公式テキストや専門書の代わりではありません。学習を始めるときの踏み台、または学習中に詰まったときに戻ってくる場所として使っていただくことを想定しています。</p>
 
-  <section style="margin-bottom:28px">
-    <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:10px">学習の特徴</h2>
-    <p style="color:#444">本サイトの最大の特徴は「具体→抽象」の学習順序です。すべてのモジュールは日常の場面から出発し、直感的な理解を経て数式・定理へと進みます。「なぜその公式が成り立つのか」「どう使うのか」まで踏み込んだ解説を心がけています。</p>
-    <p style="color:#444">インタラクティブなグラフでは、スライダーを動かして分布の形がどう変わるかをリアルタイムで確認できます。正規分布・t分布・χ²分布・F分布・ベイズ更新・ロジスティック回帰・主成分分析などの可視化に対応しています。</p>
-  </section>
+          <h2>6サイトの位置づけ</h2>
+          <div class="grid">
+            <div class="item"><strong>統計検定 準1級（/stats-pre1/）</strong> — 大学院・実務レベルの統計学。多変量解析・ベイズ統計・時系列まで網羅する36モジュール。インタラクティブグラフあり。</div>
+            <div class="item"><strong>統計検定 2級（/stats-g2/）</strong> — 大学初年級レベルの推測統計。準1級への橋渡しに最適な14モジュール構成。</div>
+            <div class="item"><strong>統計検定 3級（/stats-g3/）</strong> — 高校レベルの統計学。データの分析・確率・標本調査などを13モジュールで整理。</div>
+            <div class="item"><strong>メンタルヘルスマネジメント検定 Ⅲ種（/mhm-g3/）</strong> — セルフケアコース。ストレス対処と相談窓口を7モジュールで整理。</div>
+            <div class="item"><strong>ビジネス実務法務検定 3級（/bizlaw-g3/）</strong> — 民法・商法・会社法・労働法・知的財産権の基本を18モジュール・180問で。</div>
+            <div class="item"><strong>でんしゃあそび（/densha_asobi/）</strong> — 幼児〜小学3年生向けの12種のミニゲーム集。PWA対応でオフライン利用可。</div>
+          </div>
+          <p>同じ概念（たとえば「平均と分散」）が3級→2級→準1級と段階的に深掘りされる構成になっており、自分のレベルに合った入口を選び、必要に応じて隣の段に登り降りできます。</p>
 
-  <section style="margin-bottom:28px">
-    <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:10px">お問い合わせ</h2>
-    <p style="color:#444">内容の誤り・ご意見・ご要望は<a href="https://forms.gle/ccMv7oKwz6ysDHBe6" target="_blank" rel="noopener noreferrer" style="color:#2563eb">こちらのGoogleフォーム</a>からお願いします。統計的な誤りのご指摘は特に歓迎しています。</p>
-  </section>
+          <h2>制作方針 — A〜F フレームワーク</h2>
+          <p>全サイト共通で、コンテンツの品質を以下の6軸で内部評価しています。これは運営者が独自に運用している品質基準で、外部の標準ではありません。</p>
+          <ul>
+            <li><strong>A. Accuracy（正確性）</strong>：公式テキスト・条文・標準的な教科書との整合性を確認します。</li>
+            <li><strong>B. Brevity / Clarity（明瞭さ）</strong>：1つの概念に対して、具体例→定義→使いどころ、の順で必ず説明します。</li>
+            <li><strong>C. Coverage（網羅性）</strong>：試験範囲のすべての小項目に対応するモジュールがあること。</li>
+            <li><strong>D. Documentation（執筆ガイドの整備）</strong>：表記・用語・難易度の一貫性をサイト内で揃えます。</li>
+            <li><strong>E. Examples / Exercises（演習）</strong>：各モジュールに10問の確認クイズを必ず置きます（バリデーター強制）。</li>
+            <li><strong>F. Findability（見つけやすさ）</strong>：用語集・公式集・ランダムクイズなど、横断的に探せる仕組みを用意します。</li>
+          </ul>
 
-  <section>
-    <h2 style="font-size:1.2rem;font-weight:700;margin-bottom:10px">免責事項</h2>
-    <p style="color:#444">本サイトの解説・問題・公式は学習目的で作成されており、内容の正確性・完全性を保証するものではありません。本サイトの情報を利用したことによるいかなる損害についても、運営者は責任を負いかねます。また、本サイトは統計検定への合格を保証するものではありません。試験の最新情報・申込方法・合否については、必ず公式サイトをご確認ください。</p>
-  </section>
+          <h2>運営者の動機</h2>
+          <p>運営者自身が、データ分析・社内法務・労務の現場で「独学でつまずいた経験」を多く持ちます。同じ場所で詰まる人を一人でも減らしたい、という気持ちでこのサイト群を作っています。</p>
+          <p>サイト運営は Google AdSense の広告収入のみで賄っており、有料コンテンツ・教材販売・コンサルティングなどは一切行っていません。だからこそ「読者が読みたいものではなく、本当に必要なもの」を優先して書くことができます。</p>
 
-  <p style="margin-top:32px"><a href="/" style="color:#2563eb">← ホームへ戻る</a></p>
-</article></div>
+          <h2>今後の予定</h2>
+          <ul>
+            <li>ビジネス実務法務検定3級の演習問題拡充（過去問形式の追加）</li>
+            <li>統計検定準1級：時系列・状態空間モデルのインタラクティブ図追加</li>
+            <li>新カテゴリ：簿記3級・ITパスポートの追加検討</li>
+          </ul>
+
+          <p><a href="/">← ホームに戻る</a></p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site">
+      <div class="container">
+        <nav>
+          <a href="/">ホーム</a>
+          <a href="/privacy/">プライバシーポリシー</a>
+          <a href="/contact/">お問い合わせ</a>
+        </nav>
+        <p>© study-apps.com</p>
+      </div>
+    </footer>
   </body>
 </html>

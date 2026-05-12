@@ -25,6 +25,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://study-apps.com/sitemap/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://study-apps.com/stats-pre1/</loc>
     <lastmod>2026-05-11</lastmod>
     <changefreq>weekly</changefreq>

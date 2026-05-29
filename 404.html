@@ -12,7 +12,7 @@
       // クライアントリダイレクトで救済（Search Console の 404 を解消し、被リンクの SEO 価値を維持）
       (function () {
         var p = window.location.pathname;
-        if (/^/[12].[0-9]+[a-z]?-[a-z0-9-]+/?$/.test(p)) {
+        if (/^\/[12]\.[0-9]+[a-z]?-[a-z0-9-]+\/?$/.test(p)) {
           var newPath = '/stats-pre1' + (p.charAt(p.length - 1) === '/' ? p : p + '/');
           window.location.replace(newPath + window.location.search + window.location.hash);
           return;

@@ -2,3 +2,27 @@ User-agent: *
 Allow: /
 
 Sitemap: https://study-apps.com/sitemap-index.xml
+Sitemap: https://study-apps.com/sitemap.xml
+Sitemap: https://study-apps.com/stats-pre1/sitemap.xml
+Sitemap: https://study-apps.com/stats-g2/sitemap.xml
+Sitemap: https://study-apps.com/stats-g3/sitemap.xml
+Sitemap: https://study-apps.com/mhm-g3/sitemap.xml
+Sitemap: https://study-apps.com/bizlaw-g3/sitemap.xml
+Sitemap: https://study-apps.com/color-g3/sitemap.xml
+Sitemap: https://study-apps.com/eng-confusables/sitemap.xml
+Sitemap: https://study-apps.com/color-uc/sitemap.xml
+Sitemap: https://study-apps.com/kameido-history/sitemap.xml
+Sitemap: https://study-apps.com/gajumaru-info/sitemap.xml
+Sitemap: https://study-apps.com/kofun-guide/sitemap.xml
+Sitemap: https://study-apps.com/sekki-guide/sitemap.xml
+Sitemap: https://study-apps.com/tide-guide/sitemap.xml
+Sitemap: https://study-apps.com/macedonia-info/sitemap.xml
+Sitemap: https://study-apps.com/sprout-info/sitemap.xml
+Sitemap: https://study-apps.com/beets-info/sitemap.xml
+Sitemap: https://study-apps.com/monstera-info/sitemap.xml
+Sitemap: https://study-apps.com/chalk-lab/sitemap.xml
+Sitemap: https://study-apps.com/densha_asobi/sitemap.xml
+Sitemap: https://study-apps.com/kuku-oukoku/sitemap.xml
+Sitemap: https://study-apps.com/butsuzo-guide/sitemap.xml
+Sitemap: https://study-apps.com/todofuken-master/sitemap.xml
+Sitemap: https://study-apps.com/snowpark-guide/sitemap.xml

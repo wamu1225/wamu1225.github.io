@@ -27,3 +27,4 @@ Sitemap: https://study-apps.com/butsuzo-guide/sitemap.xml
 Sitemap: https://study-apps.com/todofuken-master/sitemap.xml
 Sitemap: https://study-apps.com/snowpark-guide/sitemap.xml
 Sitemap: https://study-apps.com/capital-quiz/sitemap.xml
+Sitemap: https://study-apps.com/fukagawa-history/sitemap.xml

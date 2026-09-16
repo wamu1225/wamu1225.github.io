@@ -29,3 +29,4 @@ Sitemap: https://study-apps.com/snowpark-guide/sitemap.xml
 Sitemap: https://study-apps.com/capital-quiz/sitemap.xml
 Sitemap: https://study-apps.com/fukagawa-history/sitemap.xml
 Sitemap: https://study-apps.com/yanaka-history/sitemap.xml
+Sitemap: https://study-apps.com/oji-history/sitemap.xml
